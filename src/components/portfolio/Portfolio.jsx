@@ -5,7 +5,7 @@ export default function Portfolio() {
     <div className="portfolio" id="portfolio">
       <h1>Portfolio</h1> 
       <ul>
-        <li>Featured</li>
+        <li className="active">Featured</li>
         <li>web App</li>
         <li>Mobile App</li>
         <li>Designing</li>
@@ -14,7 +14,28 @@ export default function Portfolio() {
 
       <div className="container">
         <div className="item">
-          <img src="" alt="" />
+          <img src="https://assets.awwwards.com/awards/submissions/2017/07/596106479e6b3.jpg" alt="" />
+          <h3>Banking App</h3>
+        </div>
+        <div className="item">
+          <img src="https://assets.awwwards.com/awards/submissions/2017/07/596106479e6b3.jpg" alt="" />
+          <h3>Banking App</h3>
+        </div>
+        <div className="item">
+          <img src="https://assets.awwwards.com/awards/submissions/2017/07/596106479e6b3.jpg" alt="" />
+          <h3>Banking App</h3>
+        </div>
+        <div className="item">
+          <img src="https://assets.awwwards.com/awards/submissions/2017/07/596106479e6b3.jpg" alt="" />
+          <h3>Banking App</h3>
+        </div>
+        <div className="item">
+          <img src="https://assets.awwwards.com/awards/submissions/2017/07/596106479e6b3.jpg" alt="" />
+          <h3>Banking App</h3>
+        </div>
+        <div className="item">
+          <img src="https://assets.awwwards.com/awards/submissions/2017/07/596106479e6b3.jpg" alt="" />
+          <h3>Banking App</h3>
         </div>
       </div>
     </div>
