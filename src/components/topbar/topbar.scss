@@ -35,6 +35,17 @@
                 margin-left: 30px;
                 align-items: center;
 
+                a{
+                    text-decoration: none;
+                    display: flex;
+                    align-items: center;
+                    .icon{
+                        font-size: 18px;
+                        margin-right: 5px;
+                        color: #000000
+                    }
+                }
+
                 .icon{
                     font-size: 18px;
                     margin-right: 5px;
@@ -89,7 +100,19 @@
                     transform: rotate(45deg)
                 }
             }
+            
         }
 
+        .left{
+            .itemContainer{
+                a{
+                    .icon{
+                        color: #fff;
+                        transition: all 1s ease;
+
+                    }
+                }
+            }
+        }
     }
 }

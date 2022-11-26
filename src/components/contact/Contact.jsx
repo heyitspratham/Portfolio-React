@@ -1,14 +1,13 @@
 import { useState } from "react";
-import "./contact.scss"
+import "./contact.scss";
 
 const Contact = () => {
+  const [message, setMessage] = useState(false);
 
-  const [message, setMessage] = useState(false)
-
-  const handleClick = (e)=>{
+  const handleClick = (e) => {
     e.preventDefault();
     setMessage(true);
-  }
+  };
   return (
     <div className="contact" id="contact">
       <div className="left">
@@ -16,15 +15,15 @@ const Contact = () => {
       </div>
       <div className="right">
         <h2>Contact.</h2>
-        <form onSubmit={handleClick} >
+        <form onSubmit={handleClick}>
           <input type="text" placeholder="Email" />
           <textarea placeholder="Message"></textarea>
-          <button type="submit" >Send</button>
-          {message && <span>Thanks, I'll reply ASAP :)</span> }
+          <button type="submit">Send</button>
+          {message && <span>Thanks, I'll reply ASAP :)</span>}
         </form>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

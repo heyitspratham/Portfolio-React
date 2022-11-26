@@ -19,18 +19,18 @@ export default function Portfolio() {
       case "featured":
         setData(featuredPortfolio);
         break;
-      case "web":
-        setData(webPortfolio);
-        break;
-      case "mobile":
-        setData(mobilePortfolio);
-        break;
-      case "design":
-        setData(designPortfolio);
-        break;
-      case "content":
-        setData(contentPortfolio);
-        break;
+      // case "web":
+      //   setData(webPortfolio);
+      //   break;
+      // case "mobile":
+      //   setData(mobilePortfolio);
+      //   break;
+      // case "design":
+      //   setData(designPortfolio);
+      //   break;
+      // case "content":
+      //   setData(contentPortfolio);
+      //   break;
     
       default:
         setData(featuredPortfolio);
@@ -46,27 +46,29 @@ export default function Portfolio() {
       id: "featured",
       title: "Featured"
     },
-    {
-      id: "web",
-      title: "Web App"
-    },
-    {
-      id: "mobile",
-      title: "Mobile App"
-    },
-    {
-      id: "design",
-      title: "Design"
-    },
-    {
-      id: "content",
-      title: "Content"
-    },
+    // {
+    //   id: "web",
+    //   title: "Web App"
+    // },
+    // {
+    //   id: "mobile",
+    //   title: "Mobile App"
+    // },
+    // {
+    //   id: "design",
+    //   title: "Design"
+    // },
+    // {
+    //   id: "content",
+    //   title: "Content"
+    // },
   ]
 
   return (
     <div className="portfolio" id="portfolio">
       <h1>Portfolio</h1> 
+      <div className="mapped">
+
       <ul>
         {list.map((item)=>(
           <PortfolioList 
@@ -75,8 +77,9 @@ export default function Portfolio() {
           id={item.id}
           setSelected={setSelected}
           />
-        ))}
+          ))}
       </ul>
+          </div>
 
       <div className="container">
         {data.map((d)=>(
